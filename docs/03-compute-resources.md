@@ -21,7 +21,7 @@ We will now create the lxc containers
 Create the three controllers:
 ```
 for i in 0 1 2; do
-  lxc launch ubuntu:21.04 controller-${i} -p k82 -s default
+  lxc launch ubuntu:21.04 controller-${i} -p k8s -s default
 done
 ```
 
