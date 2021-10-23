@@ -21,7 +21,7 @@ We will now create the lxc containers
 Create the three controllers:
 ```
 for i in 0 1 2; do
-  lxc launch images:ubuntu/18.04/amd64 controller-${i} -p kube-profile -s lxd-storage
+  lxc launch ubuntu:21.04 controller-${i} -p k82 -s default
 done
 ```
 
@@ -30,7 +30,7 @@ done
 Create the 3 workers:
 ```
 for i in 0 1 2; do
-  lxc launch images:ubuntu/18.04/amd64 worker-${i} -p k8s -s lxd-storage
+  lxc launch ubuntu:21.04 worker-${i} -p k8s -s default
 done
 ```
 
