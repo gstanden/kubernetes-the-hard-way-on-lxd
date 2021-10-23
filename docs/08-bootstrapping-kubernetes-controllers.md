@@ -19,7 +19,7 @@ done
 Download the official Kubernetes release binaries:
 
 ```
-wget -q --show-progress --https-only --timestamping \
+wget -4 --show-progress --https-only --timestamping \
   "https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kube-apiserver" \
   "https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kube-controller-manager" \
   "https://storage.googleapis.com/kubernetes-release/release/v1.12.0/bin/linux/amd64/kube-scheduler" \
