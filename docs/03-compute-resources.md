@@ -36,7 +36,7 @@ done
 
 ## HA Proxy Container
 ```
-lxc launch images:ubuntu/18.04/amd64 haproxy -p kube-profile -s lxd-storage
+lxc launch ubuntu:21.04 haproxy -p k8s -s default
 ```
 
 Check if all the containers are created:
