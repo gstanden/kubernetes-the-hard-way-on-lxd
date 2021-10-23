@@ -30,7 +30,7 @@ done
 Create the 3 workers:
 ```
 for i in 0 1 2; do
-  lxc launch images:ubuntu/18.04/amd64 worker-${i} -p kube-profile -s lxd-storage
+  lxc launch images:ubuntu/18.04/amd64 worker-${i} -p k8s -s lxd-storage
 done
 ```
 
